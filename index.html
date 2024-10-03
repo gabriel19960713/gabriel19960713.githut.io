@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bubu y Dudu</title>
+	</head>
+
+		<body background="fondo.jpg">
+            <audio controls autoplay loop>
+  <source src="thereason.mp3" type="audio/mpeg">
+</audio>
+    <header>
+        <h1>🧸Bubu y Dudu🧸</h1>
+    </header>
+    
+
+        <div id="carrusel-contenido">
+            <div id="carrusel-caja">
+                <div class="carrusel-elemento">
+                    <img class="imagenes" src="sama.jpg" >
+                    <h3>SAMAIPATA</h3>
+                </div>
+                <div class="carrusel-elemento">   
+                    <img class="imagenes" src="cousin'swedding.jpg">
+                 <h3>COUSIN'S WEDDING</h3>
+                </div>
+                <div class="carrusel-elemento">   
+                    <img class="imagenes" src="bitsandcream.jpg">  
+                      <h3>FIRST DATE</h3>                      
+                </div>
+            </div>
+        </div>
+       
+
+
+    <!--html><div class="carousel">
+        <img class="carousel-image" src="sama.jpg" alt="Imagen 1">
+        <img class="carousel-image" src="bitsandcream.jpg" alt="Imagen 2" style="display:none;">
+        <img class="carousel-image" src="cafeteria.jpg" alt="Imagen 3" style="display:none;">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>-- ></html-->
+
+    <main>
+        <section>
+            
+            <h2>En la vastedad de este universo, tu amor es mi constelación, guiando mis pasos en la oscuridad de la noche. 🌹 Cada palabra que nace de ti se convierte en un verso que mi corazón recita en un susurro, llenando de poesía cada rincón de mi ser. 💫 Como un faro en la tormenta, tu amor ilumina mi camino, disipando las sombras de la duda y el temor.</h2>
+            
+        </section>
+
+        <section class="buttons">
+            <button onclick="window.open('https://www.facebook.com/lindsay.callaugongora', '_blank')">Persona Favorita</button>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bubu y Dudu</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlide(slideIndex);
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName("carousel-image");
+            if (n >= slides.length) slideIndex = 0;
+            if (n < 0) slideIndex = slides.length - 1;
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+    </script>
+	</body>
+</html>	
